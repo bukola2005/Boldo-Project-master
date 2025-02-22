@@ -1,0 +1,201 @@
+.container{
+  max-width: $max-width;
+  padding: 0  3rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// button
+%btn{
+  display: inline-block;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  // border-radius: 0.5rem;
+  // -webkit-border-radius: 0.5rem;
+  // -moz-border-radius: 0.5rem;
+  // -ms-border-radius: 0.5rem;
+  // -o-border-radius: 0.5rem;
+  
+
+}
+
+.btn{
+  &-light{
+    @extend%btn;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 1.3rem 4.6rem;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+
+  &-greenlong{
+    @extend %btn;
+    background: $secondary-color;
+    padding: 1.8rem 14% ;
+    font-weight: 700;
+    font-size: 1.7rem;
+border: 2px solid $secondary-color;
+border-radius: 56px;
+color: $main-color;
+   
+  }
+  &-greensmall{
+    @extend %btn;
+      background: $secondary-color;
+      padding: 1.8rem 6% ;
+      font-weight: 700;
+      font-size: 1.7rem;
+  border: 2px solid $secondary-color;
+  border-radius: 56px;
+  color: $main-color;
+  }
+  &-footer{
+    @extend %btn;
+      background: $secondary-color;
+      padding: 0.6rem 6% ;
+      font-weight: 700;
+      font-size: 1.3rem;
+  border: 2px solid $secondary-color;
+  border-radius: 56px;
+  color: $main-color;
+  }
+  &-borderless{
+    @extend %btn;
+    padding: 1.4rem 13%;
+    color: $light-color;
+    font-weight: 700;
+    font-size: 1.7rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+    background: $main-color;
+  }
+  // &-darkblue{
+  //   @extend %btn;
+  //   background-color: $main-color;
+  //   border: 2px solid #0A2640;
+  //   border-radius: 56px;
+  //   padding: 1.8rem 10%;
+  //   color: $light-color;
+  //   font-weight: 700;
+  //   text-align: center;
+  // }
+
+}
+
+%drakblue{
+  @extend %btn;
+    border: 2px solid #0A2640;
+    border-radius: 56px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-darkblue{
+  &-border{
+    @extend %drakblue;
+    background-color: $main-color;
+    color: $light-color;
+    padding: 1.8rem 10%;
+  }
+  &-borderless{
+    @extend %drakblue;
+    background-color: $light-color;
+    color: $main-color;
+    // padding: 1.8rem 5%;
+    padding: 1.3rem 4.6rem;
+  }
+  &-about{
+    @extend %drakblue;
+    background: $secondary-color;
+    border: 2px solid $main-color;
+    color: $main-color;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 1.3rem 4.6rem;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+  }
+}
+
+
+ button[class^='btn-']:hover{
+  background-color: $drak-color;
+  color: $gray-color;
+ }
+
+ //  padding
+.py{
+  &-1{
+    padding: 1rem 0;
+  }
+  &-2{
+    padding: 2rem 0;
+  }
+  &-3{
+    padding: 3rem 0;
+  }
+  &-4{
+    padding: 4rem 0;
+  }
+}
+//  margin
+.my{
+  &-1{
+    margin: 1rem 0;
+  }
+  &-2{
+    margin: 2rem 0;
+  }
+  &-3{
+    margin: 3rem 0;
+  }
+  &-4{
+    margin: 4rem 0;
+  }
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.small{
+  height: 29rem;
+}
+.medium{
+  height: 33rem;
+}
+.green{
+  color: $secondary-color;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.center{
+  text-align: center;
+}
+.main-color{
+  color: $main-color;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-right: 2rem;
+}
+.gray-color{
+  color: $medium-color;
+  font-weight: 400;
+  font-size: 1.6rem;
+}

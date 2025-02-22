@@ -1,0 +1,331 @@
+// moblie
+@media only screen and (max-width: 480px) {
+  // body{
+  //   overflow-x: hidden;
+  // }
+  // img{
+  //   width: 10%;
+  // }
+  img#postion{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 90%;
+    z-index: -10000;
+  }
+  #showcase-area .nav{
+    & > img{
+      width: 29%;
+    }
+    ul{ 
+      position: fixed;
+      z-index: 1000;
+      top: 100px;
+      right: -100%;
+      flex-direction: column;
+      padding: 5rem 2.5rem;
+         width: 100%;
+          height: 550px;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          background-color: $secondary-color;
+          // background: transparent;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+
+          li:not(:last-child){
+            margin-bottom: 3rem;
+          }
+
+          a{
+            color: $main-color;
+            font-size: 2rem;
+          }
+
+
+          &.show{
+            right: 0;
+          }
+         
+     }
+     .open-menu{
+      display: block;
+      color: $light-color !important;
+      cursor: pointer; 
+      background-color: $main-color;
+  
+      &.notShowMenu {
+        display: none;
+        }
+    }
+    
+    .close-menu{
+      cursor: pointer;
+      color: $light-color;
+      background-color: $main-color;
+  
+      &.notShowMenu {
+        display: block;
+        }
+    }
+     
+  }
+
+  .show-flex{
+    & > div:first-child{
+      // background-color: bisque;
+      & > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      // div > button:not(:last-child){
+      //   margin-right: 0;
+      // }
+    }
+  }
+
+  #service {
+    .feature > div > img {
+      width: 60%;
+      // background-color: black;
+  }
+  }
+
+
+  #blog{
+    & .container{ 
+    .blog-flex > div > img{
+          width: 75%
+        }
+      }   
+    }
+
+    // about media query
+    #about-area .nav{
+      & > img{
+        width: 29%;
+      }
+      ul{ 
+        position: fixed;
+        z-index: 1000;
+        top: 100px;
+        right: -100%;
+        flex-direction: column;
+        padding: 5rem 2.5rem;
+           width: 100%;
+            height: 550px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+            background-color: $main-color;
+            // background: transparent;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
+            transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+  
+            li:not(:last-child){
+              margin-bottom: 3rem;
+            }
+  
+            a{
+              color: $secondary-color;
+              font-size: 2rem;
+            }
+  
+  
+            &.show{
+              right: 0;
+            }
+           
+       }
+       .open-menu{
+        display: block;
+        color: $main-color !important;
+        cursor: pointer; 
+        background-color: $secondary-color;
+    
+        &.notShowMenu {
+          display: none;
+          }
+      }
+      
+      .close-menu{
+        cursor: pointer;
+        color: $main-color;
+        background-color: $secondary-color;
+    
+        &.notShowMenu {
+          display: block;
+          }
+      }
+       
+    }
+
+    #team{
+      & .container{
+        p{
+          width: 100%;
+        }
+    }
+  }
+
+  #enterprise{
+    & .container{
+      & > div{
+        input{
+          width: 100%;
+          margin-right: 0;
+          margin-top: 2rem;
+        }
+        button{
+          width: 100%;
+          margin-right: 0;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  #footer{
+    & .container{
+      & > div:first-child{
+        grid-template-columns: 100%;
+      }
+    }
+  }
+
+
+// blog media
+#blog-area .nav{
+    & > img{
+      width: 29%;
+    }
+    ul{ 
+      position: fixed;
+      z-index: 1000;
+      top: 100px;
+      right: -100%;
+      flex-direction: column;
+      padding: 5rem 2.5rem;
+         width: 100%;
+          height: 550px;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          background-color: $light-background;
+          // background: transparent;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
+          transition: all 0.4s ease-in-out;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+
+          li:not(:last-child){
+            margin-bottom: 3rem;
+          }
+
+          a{
+            color: $main-color;
+            font-size: 2rem;
+          }
+
+
+          &.show{
+            right: 0;
+          }
+         
+     }
+     .open-menu{
+      display: block;
+      color: $main-color !important;
+      cursor: pointer; 
+      background-color: $light-color;
+  
+      &.notShowMenu {
+        display: none;
+        }
+    }
+    
+    .close-menu{
+      cursor: pointer;
+      color: $main-color;
+      background-color: $light-color;
+  
+      &.notShowMenu {
+        display: block;
+        }
+    }
+     
+  }
+
+  }
+
+
+  // tablets
+  @media only screen and (max-width:767px){
+    // home
+    .show-flex{
+      & > div:first-child{
+        // & > div{
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        // }
+        div > button:not(:last-child){
+          margin-right: 0rem;
+        }
+        // .hit{
+        //   & button:not(:last-child){
+        //     margin-bottom: 2rem;
+        //   }
+        // }
+      }
+    } 
+
+    // about
+    #team{
+      & .container{
+        p{
+          width: 100%;
+        }
+    }
+  }
+
+
+  }
+
+@media only screen and (max-width:593px){
+#ramp{
+  & .rampflex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+  }
+@media only screen and (max-width:1040px){
+  html{
+    scroll-behavior: smooth;
+    font-size: 50%;
+  }
+ 
+}
