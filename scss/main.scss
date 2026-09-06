@@ -89,19 +89,32 @@ button {
     font-size: 1.6rem;
     font-weight: 600;
     color: $light-color;
-    border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
-    -webkit-transition: border-color 0.5s;
-    -moz-transition: border-color 0.5s;
-    -ms-transition: border-color 0.5s;
-    -o-transition: border-color 0.5s;
+    position: relative;
+    transition: color 0.3s ease;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: $medium-color;
+      transition: width 0.3s ease;
+    }
 
     &:hover{
-      border-color: $medium-color;
+      color: $medium-color;
+      &::after {
+        width: 100%;
+      }
     }
      &.current{
-      border-color: $light-color;
+      &::after {
+        width: 100%;
+        background-color: $light-color;
+      }
      }
 }
   }
@@ -799,8 +812,8 @@ margin-right: 2rem;
     }
    }
   }
-  }
-  
+}
+
 
   // #new{
   //   & .container{
@@ -827,3 +840,21 @@ margin-right: 2rem;
 
 
 @import 'media';
+
+// Scroll Animation Classes
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.show, .slide-in.show {
+  opacity: 1;
+  transform: translate(0);
+}

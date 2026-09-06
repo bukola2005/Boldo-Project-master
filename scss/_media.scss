@@ -14,68 +14,19 @@
     z-index: -10000;
   }
   #showcase-area .nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     & > img{
-      width: 29%;
+      width: 40%;
     }
-    ul{ 
-      position: fixed;
-      z-index: 1000;
-      top: 100px;
-      right: -100%;
+    ul {
+      display: flex;
       flex-direction: column;
-      padding: 5rem 2.5rem;
-         width: 100%;
-          height: 550px;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          border-radius: 2rem;
-          background-color: $secondary-color;
-          // background: transparent;
-          backdrop-filter: blur(10px);
-          box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
-          transition: all 0.4s ease-in-out;
-          -webkit-transition: all 0.4s ease-in-out;
-          -moz-transition: all 0.4s ease-in-out;
-          -ms-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
-
-          li:not(:last-child){
-            margin-bottom: 3rem;
-          }
-
-          a{
-            color: $main-color;
-            font-size: 2rem;
-          }
-
-
-          &.show{
-            right: 0;
-          }
-         
-     }
-     .open-menu{
-      display: block;
-      color: $light-color !important;
-      cursor: pointer; 
-      background-color: $main-color;
-  
-      &.notShowMenu {
-        display: none;
-        }
+      gap: 1.5rem;
+      align-items: center;
     }
-    
-    .close-menu{
-      cursor: pointer;
-      color: $light-color;
-      background-color: $main-color;
-  
-      &.notShowMenu {
-        display: block;
-        }
-    }
-     
+    .open-menu, .close-menu { display: none !important; }
   }
 
   .show-flex{
@@ -110,69 +61,20 @@
 
     // about media query
     #about-area .nav{
-      & > img{
-        width: 29%;
-      }
-      ul{ 
-        position: fixed;
-        z-index: 1000;
-        top: 100px;
-        right: -100%;
-        flex-direction: column;
-        padding: 5rem 2.5rem;
-           width: 100%;
-            height: 550px;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            border-radius: 2rem;
-            background-color: $main-color;
-            // background: transparent;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
-            transition: all 0.4s ease-in-out;
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            -ms-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-  
-            li:not(:last-child){
-              margin-bottom: 3rem;
-            }
-  
-            a{
-              color: $secondary-color;
-              font-size: 2rem;
-            }
-  
-  
-            &.show{
-              right: 0;
-            }
-           
-       }
-       .open-menu{
-        display: block;
-        color: $main-color !important;
-        cursor: pointer; 
-        background-color: $secondary-color;
-    
-        &.notShowMenu {
-          display: none;
-          }
-      }
-      
-      .close-menu{
-        cursor: pointer;
-        color: $main-color;
-        background-color: $secondary-color;
-    
-        &.notShowMenu {
-          display: block;
-          }
-      }
-       
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    & > img{
+      width: 40%;
     }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .open-menu, .close-menu { display: none !important; }
+  }
 
     #team{
       & .container{
@@ -209,68 +111,19 @@
 
 // blog media
 #blog-area .nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     & > img{
-      width: 29%;
+      width: 40%;
     }
-    ul{ 
-      position: fixed;
-      z-index: 1000;
-      top: 100px;
-      right: -100%;
+    ul {
+      display: flex;
       flex-direction: column;
-      padding: 5rem 2.5rem;
-         width: 100%;
-          height: 550px;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          border-radius: 2rem;
-          background-color: $light-background;
-          // background: transparent;
-          backdrop-filter: blur(10px);
-          box-shadow: 0 5px 30px rgba(39, 40, 41, 0.6);
-          transition: all 0.4s ease-in-out;
-          -webkit-transition: all 0.4s ease-in-out;
-          -moz-transition: all 0.4s ease-in-out;
-          -ms-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
-
-          li:not(:last-child){
-            margin-bottom: 3rem;
-          }
-
-          a{
-            color: $main-color;
-            font-size: 2rem;
-          }
-
-
-          &.show{
-            right: 0;
-          }
-         
-     }
-     .open-menu{
-      display: block;
-      color: $main-color !important;
-      cursor: pointer; 
-      background-color: $light-color;
-  
-      &.notShowMenu {
-        display: none;
-        }
+      gap: 1.5rem;
+      align-items: center;
     }
-    
-    .close-menu{
-      cursor: pointer;
-      color: $main-color;
-      background-color: $light-color;
-  
-      &.notShowMenu {
-        display: block;
-        }
-    }
-     
+    .open-menu, .close-menu { display: none !important; }
   }
 
   }
@@ -303,9 +156,23 @@
         p{
           width: 100%;
         }
+      }
     }
-  }
 
+    // Stack grid and flex layouts gracefully
+    .flex {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+    }
+    .grid {
+      grid-template-columns: 1fr !important;
+    }
+    
+    // Scale down padding
+    .py-4 { padding: 2.5rem 0; }
+    .py-3 { padding: 2rem 0; }
+    .py-2 { padding: 1.5rem 0; }
 
   }
 
